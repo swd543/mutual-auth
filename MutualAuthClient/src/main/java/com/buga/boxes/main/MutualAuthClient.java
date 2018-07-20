@@ -67,9 +67,9 @@ public class MutualAuthClient {
  * The HTTP Client builder class
  */
 class SSLClientBuilder{
-	private final String clientStoreUrl="../DataIngestPOC/cert/MyClient.p12";
+	private final String clientStoreUrl="../cert/MyClient.p12";
 	private final String clientPass="password";
-	private final String trustStoreUrl="../DataIngestPOC/cert/MyClient.p12";
+	private final String trustStoreUrl="../cert/MyClient.p12";
 	private final String trustPass="password";
 
 	private final HttpClient client;
