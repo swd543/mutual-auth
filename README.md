@@ -20,7 +20,7 @@ Please refer to the readme in the [MutualAuthServer](./MutualAuthServer/) folder
 ### 3. Run client
 Please refer to the readme in the [MutualAuthClient](./MutualAuthClient/) folder.
 
-#### Check mutual authentication with curl
+## Check mutual authentication with curl
 From the certs directory, issue the following command while the server is running
 ```
 curl 'https://localhost:8443/api/ping' --key MyClient.key.pem --cert MyClient.crt.pem:password -k
