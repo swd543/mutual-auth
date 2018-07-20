@@ -31,7 +31,7 @@ keytool -importcert -alias $KEYSTORECLIENT -keystore $KEYSTORESERVER.p12 -file $
 if [ $# -ne 0 ]; then
 	echo "Creating pem files"
 	echo "Use the following command to test your api"
-	echo "curl 'https://localhost:8443/api/ping' -H 'Upgrade-Insecure-Requests: 1' -H 'Cookie: JSESSIONID=6F15812966C1F8001D89AE96E0DBFE0C' --key MyClient.key.pem --cert MyClient.crt.pem:password -k"
+	echo "curl 'https://localhost:8443/api/ping' --key MyClient.key.pem --cert MyClient.crt.pem:password -k"
 	openssl pkcs12 -in $KEYSTORECLIENT.p12 -out $KEYSTORECLIENT.key.pem -nocerts -nodes -passin pass:password
 	openssl pkcs12 -in $KEYSTORECLIENT.p12 -out $KEYSTORECLIENT.crt.pem -clcerts -nokeys -passin pass:password
 fi
