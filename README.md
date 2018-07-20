@@ -8,15 +8,15 @@ The building and execution needs to be in this order.
 3. Run client
 
 ## Generate self signed certificates
-Run the following command in the base directory
+Run the following command in the cert directory
 ```
 ./createKey.sh
 ```
 Put password as 'password' whenever prompted.
 
 ## Run server
-Please refer to the readme in the [MutualAuthServer](./MutualAuthServer/README.md) folder.
+Please refer to the readme in the [MutualAuthServer](./MutualAuthServer/) folder.
 
 ## Run client
-Please refer to the readme in the [MutualAuthClient](./MutualAuthClient/README.md) folder.
+Please refer to the readme in the [MutualAuthClient](./MutualAuthClient/) folder.
 
