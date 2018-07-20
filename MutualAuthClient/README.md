@@ -7,5 +7,5 @@ After ensuring that the certificates have been generated and the server is up, r
 mvn package && mvn exec:java
 ```
 
-The path to the certificate files can be changed [here](/src/main/java/com/buga/boxes/main/MutualAuthClient.java), by the *StoreUrl final variables.
+The path to the certificate files can be changed [here](./src/main/java/com/buga/boxes/main/MutualAuthClient.java), by the *StoreUrl final variables.
 This is a source change and needs to be recompiled to take effect.
