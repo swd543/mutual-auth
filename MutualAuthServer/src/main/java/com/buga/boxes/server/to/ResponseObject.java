@@ -1,5 +1,10 @@
 package com.buga.boxes.server.to;
 
+/**
+ * @author Swapneel
+ * A wrapper class to always encapsulate our response object in a JSON
+ * @param <T>
+ */
 public class ResponseObject<T> {
 	private long timestamp;
 	private T value;

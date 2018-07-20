@@ -10,7 +10,7 @@ rm $KEYSTORESERVER* $KEYSTORECLIENT*
 #keytool -genkey -alias $KEYSTORESERVER -keyalg RSA -validity 1825 -keystore $KEYSTORESERVER.jks -storetype JKS -dname "CN=myserver.com,OU=My Company Name,O=My Organization,L=My Location,ST=My State,C=My Country Short Code" -keypass password -storepass password
 echo "Creating trust store for server (pkcs12)"
 #keytool -importkeystore -srckeystore $KEYSTORESERVER.jks -destkeystore $KEYSTORESERVER.p12 -srcstoretype JKS -deststoretype PKCS12 -deststorepass password
-keytool -genkey -alias $KEYSTORESERVER -keyalg RSA -validity 1825 -keystore $KEYSTORESERVER.p12 -storetype PKCS12 -dname "CN=myserver.com,OU=My Company Name,O=My Organization,L=My Location,ST=My State,C=My Country Short Code" -keypass password -storepass password
+keytool -genkey -alias $KEYSTORESERVER -keyalg RSA -validity 1825 -keystore $KEYSTORESERVER.p12 -storetype PKCS12 -dname "CN=myserver.com,OU=My Company Name,O=My Organization,L=My Location,ST=My State,C=My Country Short Code" -keypass password -storepass password -ext "SAN=ip:127.0.0.1,dns:localhost"
 
 #echo "Creating trust store for client (jks)"
 #keytool -genkey -alias $KEYSTORECLIENT -keyalg RSA -validity 1825 -keystore $KEYSTORECLIENT.jks -storetype JKS -dname "CN=myclient.com,OU=My Company Name,O=My Organization,L=My Location,ST=My State,C=My Country Short Code" -keypass password -storepass password
