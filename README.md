@@ -25,3 +25,4 @@ From the certs directory, issue the following command while the server is runnin
 ```
 curl 'https://localhost:8443/api/ping' --key MyClient.key.pem --cert MyClient.crt.pem:password -k
 ```
+If this helped, please buy me a cup of [coffee](http://paypal.me/SwapneelDatta)?
