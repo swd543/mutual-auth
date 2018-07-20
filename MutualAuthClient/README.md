@@ -4,5 +4,5 @@ The server needs to be running before the client is run, else the mojo-exec-plug
 After ensuring the server is up, run the following command
 
 ```
-mvn exec:run
+mvn exec:java
 ```
