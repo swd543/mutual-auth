@@ -15,8 +15,8 @@ Run the following command in the base directory
 Put password as 'password' whenever prompted.
 
 ## Run server
-Please refer to the readme in the MutualAuthServer folder.
+Please refer to the readme in the [MutualAuthServer](../MutualAuthServer/README.md) folder.
 
 ## Run client
-Please refer to the readme in the MutualAuthClient folder.
+Please refer to the readme in the [MutualAuthClient](../MutualAuthClient/README.md) folder.
 
